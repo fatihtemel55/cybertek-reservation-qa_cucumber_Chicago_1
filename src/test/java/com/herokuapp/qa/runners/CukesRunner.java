@@ -15,7 +15,7 @@ import cucumber.api.junit.Cucumber;
 		
 		features="src/test/resources/feature", 
 		glue="com.herokuapp.qa.steps",
-		tags = "@Runner",
-		dryRun = true
+		tags = "@1633",
+		dryRun = false
 		)
 public class CukesRunner {}
