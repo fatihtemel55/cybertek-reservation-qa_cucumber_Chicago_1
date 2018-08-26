@@ -11,12 +11,11 @@ import cucumber.api.junit.Cucumber;
 				"pretty",
 				"html:target/cucumber-reports",
 				"json:target/cucumber.json"
-		
 		},
 		
-		tags="@test",
-		features="src/test/resources/com/herokuapp/features", 
-		glue="com.herokuapp.qa.steps"
-		,dryRun = true
+		features="src/test/resources/feature", 
+		glue="com.herokuapp.qa.steps",
+		tags = "@1633",
+		dryRun = false
 		)
 public class CukesRunner {}
