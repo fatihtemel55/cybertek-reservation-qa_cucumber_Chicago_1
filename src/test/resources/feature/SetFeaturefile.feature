@@ -1,3 +1,19 @@
+<<<<<<< HEAD
+@SPA-1260
+Feature: User should be able to login
+
+	
+	Scenario Outline: User should be able to login 
+		Given user goes to the homepage
+		Then  user passes "<email>" and "<password>"
+		And   user clicks signin
+		Then  user verifies if text "IL" exist
+		
+		Examples:
+		|	email		   |	password|
+		|abowfinc1@ning.com| emeryvassar|
+	
+=======
 @Runner
 Feature: sinan
 
@@ -15,3 +31,4 @@ And choose any conference
 Then user cancel the reservation 
 And should receive email notification
 
+>>>>>>> 6c61b12574864a214859291a33b5074e15cf6ae3
