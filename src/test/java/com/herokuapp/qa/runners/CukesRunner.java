@@ -11,7 +11,6 @@ import cucumber.api.junit.Cucumber;
 				"pretty",
 				"html:target/cucumber-reports",
 				"json:target/cucumber.json"
-		
 		},
 		
 		features="src/test/resources/feature", 
