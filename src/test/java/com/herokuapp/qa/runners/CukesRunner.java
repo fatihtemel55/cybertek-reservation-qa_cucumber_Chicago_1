@@ -14,9 +14,10 @@ import cucumber.api.junit.Cucumber;
 		
 		},
 		
-		tags="@test",
-		features="src/test/resources/com/herokuapp/features", 
-		glue="com.herokuapp.qa.steps"
-		,dryRun = true
+		
+		features="src/test/resources/feature", 
+		glue="com.herokuapp.qa.steps",
+		tags="@SPA-1260",
+		dryRun = false
 		)
 public class CukesRunner {}
