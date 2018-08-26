@@ -5,11 +5,11 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.herokuapp.qa.utilities.Driver;
 
-public class myMenuPage {
+public class MyMenuPage {
 
 	private WebDriver driver;
 
-	public myMenuPage() {
+	public MyMenuPage() {
 		this.driver = Driver.getDriver();
 		PageFactory.initElements(driver, this);
 	}

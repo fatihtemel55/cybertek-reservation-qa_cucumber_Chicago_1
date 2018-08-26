@@ -7,11 +7,11 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.herokuapp.qa.utilities.Driver;
 
-public class mapMenuPage {
+public class MapMenuPage {
 
 	private WebDriver driver;
 
-	public mapMenuPage() {
+	public MapMenuPage() {
 		this.driver = Driver.getDriver();
 		PageFactory.initElements(driver, this);
 	}

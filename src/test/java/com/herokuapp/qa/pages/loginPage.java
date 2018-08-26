@@ -7,11 +7,11 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.herokuapp.qa.utilities.Driver;
 
-public class loginPage {
+public class LoginPage {
 
 	private WebDriver driver;
 
-	public loginPage() {
+	public LoginPage() {
 		this.driver = Driver.getDriver();
 		PageFactory.initElements(driver, this);
 	}
