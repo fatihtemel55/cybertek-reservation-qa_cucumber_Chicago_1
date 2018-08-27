@@ -7,22 +7,12 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.herokuapp.qa.utilities.Driver;
 
-public class MyMenuPage {
+public class HuntMenuPage {
 
 	private WebDriver driver;
 
-	public MyMenuPage() {
+	public HuntMenuPage() {
 		this.driver = Driver.getDriver();
 		PageFactory.initElements(driver, this);
 	}
-	
-	@FindBy(xpath = "//a[text()='my']")
-	public WebElement myMenu;
-	
-	@FindBy(xpath = "//a[text()='self']")
-	public WebElement mySelf;
-	
-	@FindBy(xpath = "//a[text()='team']")
-	public WebElement myTeam;
-	
 }
