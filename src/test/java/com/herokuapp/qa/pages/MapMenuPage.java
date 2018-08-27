@@ -7,11 +7,11 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.herokuapp.qa.utilities.Driver;
 
-public class mapMenuPage {
+public class MapMenuPage {
 
 	private WebDriver driver;
 
-	public mapMenuPage() {
+	public MapMenuPage() {
 		this.driver = Driver.getDriver();
 		PageFactory.initElements(driver, this);
 	}
@@ -57,5 +57,8 @@ public class mapMenuPage {
 
 	@FindBy(xpath = "//div[@class='navbar-end']//div/div/a[3]")
 	public WebElement singOutSubMenu;
+	
+	@FindBy(xpath = "//h1[@class='title']")
+	public WebElement ILtext;
 
 }
