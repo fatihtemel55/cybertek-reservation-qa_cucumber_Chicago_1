@@ -17,17 +17,22 @@ public class DBUtility {
 	private static Statement statement;
 	private static ResultSet resultSet;
 	
-	public static void establishConnection(DBType dbType) throws SQLException {
-		switch(dbType) {
-		case POSTGRES:
-			connection = DriverManager.getConnection(ConfigurationReader.getProperty("reservationDbUrl"),
-													ConfigurationReader.getProperty("reservationDbUsername"),
-													ConfigurationReader.getProperty("reservationDbPassword"));
-				break;
-			default:
-				connection = null;
+	public static void establishConnection() {
+		
+		String url = ConfigurationReader.getProperty("qa1_db_host");
+		String user = ConfigurationReader.getProperty("qa1_db_username");
+		String password = ConfigurationReader.getProperty("qa1_db_password");
+		
+		
+			try {
+				connection = DriverManager.getConnection(url, user, password);
+			} catch (SQLException e) {
 				
-		}
+				e.printStackTrace();
+			}
+				
+				
+		
 	}
 	
 	public static int getRowsCount(String sql) throws SQLException {

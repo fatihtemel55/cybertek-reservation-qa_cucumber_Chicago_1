@@ -57,8 +57,14 @@ public class MapMenuPage {
 
 	@FindBy(xpath = "//div[@class='navbar-end']//div/div/a[3]")
 	public WebElement singOutSubMenu;
-	
+
 	@FindBy(xpath = "//h1[@class='title']")
 	public WebElement ILtext;
+  
+	@FindBy(xpath = "//title[text()='cybertek-bnb']")
+	public WebElement titleMapPage;
+	
+	@FindBy(xpath = "//img[@alt='cybertek building plan']")
+	public WebElement map;
 
 }
