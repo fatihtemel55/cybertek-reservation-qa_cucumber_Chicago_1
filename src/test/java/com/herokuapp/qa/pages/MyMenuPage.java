@@ -15,7 +15,7 @@ public class MyMenuPage {
 		this.driver = Driver.getDriver();
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	@FindBy(xpath = "//a[text()='my']")
 	public WebElement myMenu;
 	

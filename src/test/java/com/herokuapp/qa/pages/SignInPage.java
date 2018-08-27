@@ -1,19 +1,14 @@
 package com.herokuapp.qa.pages;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.herokuapp.qa.utilities.Driver;
 
-public class LoginPage {
-
-	private WebDriver driver;
-
-	public LoginPage() {
-		this.driver = Driver.getDriver();
-		PageFactory.initElements(driver, this);
+public class SignInPage {
+	public SignInPage() {
+		PageFactory.initElements(Driver.getDriver(), this);
 	}
 
 	@FindBy(name = "email")
@@ -22,7 +17,14 @@ public class LoginPage {
 	@FindBy(name = "password")
 	public WebElement password;
 
-	@FindBy(xpath = "//button[@class='button is-dark']")
-	public WebElement singInBtn;
+	@FindBy(xpath = "//button[.='sign in']")
+	public WebElement signInButton;
+	
+	@FindBy(xpath = "//h1")
+	public WebElement signInTitle;
+	
+	
+
+
 
 }
